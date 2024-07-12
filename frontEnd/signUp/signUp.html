@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css">
+    <title>SignUp_page</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form onsubmit="signup(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder=" enter username">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="enter email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password">
+            </div>
+
+            <div class="form-group">
+                <label for="number">Number</label>
+                <input type="number" id="number" placeholder="Contact_no.">
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position</label>
+                <select name="position" id="position">
+                    <option value="employee">Employee</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Hr">Human resource</option>
+                </select>
+            </div>
+
+            <div class="form-footer">
+                <input type="submit" value="Add">
+            </div>
+        </form>
+        <br>
+        <p>Allready added? please login <a href="../Login/login.html">Login</a></p>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+    <script src="signUp.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    
+    background :linear-gradient(90deg, #d09070, #45838b);
+ }  
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Optional: color for the heading */
+}
+
+#userTable {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for the table */
+    background-color: #fff; /* Optional: background color for the table */
+}
+
+#userTable th {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+}
+
+/* Style table cells */
+#userTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+#userTable tr:hover {
+    background-color: #f1f1f1;
+}

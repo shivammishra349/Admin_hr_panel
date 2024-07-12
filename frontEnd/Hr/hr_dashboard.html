@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hr.css">
+    <title>Hr_dashboard</title>
+</head>
+<body>
+    <h2 id="welcomeMessage"></h2>
+    <form onsubmit="hr_update(event)">
+    
+
+    <div class="form-group">
+        <label for="name">Enter Name:</label>
+        <input type="text" name= "name" id="name" placeholder="enter name">
+    <div>
+    <div class="form-group">
+        <label for="email">Enter Email:</label>
+        <input type="email" name= "email" id="email" placeholder="enter email">
+    </div>
+    <div class="form-group">
+        <label for="password">Enter Password:</label>
+        <input type="password" name= "password" id="password" placeholder="enter password">
+    </div>
+    <div class="form-group">
+        <label for="number">Enter Contact_no:</label>
+        <input type="number" name= "number" id="number" placeholder="enter number">
+    </div>
+    <div class="form-group">
+        <label for="position" >Choose role</label>
+        <select name="position" id="position">
+            <option value="employee">Employee</option>
+            <option value="Admin">Admin</option>
+            <option value="Hr">Human resource</option>
+        </select>
+    </div>
+    <input type="submit" class="submit-btn" value="Add Employee">
+    </form>
+
+    <table id="userTable" >
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>EMAIL ID</th>
+                <!-- <th>PASSWORD</th> -->
+                <th>POSITION</th>
+                <th>CONTACT_NO.</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+    <script src="hr_dashboard.js"></script>
+</body>
+</html>
