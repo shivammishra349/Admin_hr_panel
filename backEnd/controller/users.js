@@ -10,7 +10,7 @@ let userSignup = async (req,res)=>{
         let password= req.body.password;
         let position= req.body.position;
         let number = req.body.number
-        position = position || 'employee';
+        
         
         console.log(name , email,password,position ,number)
     

@@ -29,7 +29,7 @@ let User = sequelize.define('user',{
     position:{
         type: Sequelize.ENUM,
         values: ['admin', 'hr', 'employee'],
-        defaultValue: 'employee',
+        // defaultValue: 'employee',
         allowNull:false
     },
    
